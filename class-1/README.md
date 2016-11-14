@@ -1,12 +1,13 @@
 #Week 6 - Class 1
 ##Lab Assignment
 * Create a category method on NSString that takes in itself and returns an array of words
-* Write a method that takes in id type, checks if its NSNumber, NSString, NSArray and performs the following:
-	* if number, calculate the square root
-	* if string, reverses it
-	* if array, checks for object type and calculates how many time specific type is mentioned (if array contains 3 strings, NSLog = contains 3 strings)
 * Declare a simple protocol with optional and required methods. Name it whatever you like
-* Declare a class called Person. Extend (indirectly - subclass) this class. Add appropriate behavior to your subclass (Person -> Employee)
+* Declare a class called Person. Subclass Person and add behavior to your subclass (Person -> Employee):  
+	* Employee Number  
+	* Years Employed  
+	* Manager's Name  
+* Define Setter and Getter methods for the above values.  
+* Create a function that takes in an NSArray of People and using a for-loop, prints their names to the console.  
 
 ###Reading Assignment:
 * Programming in Objective-C

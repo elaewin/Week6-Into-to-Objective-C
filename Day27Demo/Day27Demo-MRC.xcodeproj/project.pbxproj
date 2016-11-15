@@ -13,10 +13,11 @@
 		554AF0CF1DDB80BA00AC6899 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554AF0CD1DDB80BA00AC6899 /* Main.storyboard */; };
 		554AF0D11DDB80BA00AC6899 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 554AF0D01DDB80BA00AC6899 /* Assets.xcassets */; };
 		554AF0D41DDB80BA00AC6899 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554AF0D21DDB80BA00AC6899 /* LaunchScreen.storyboard */; };
+		554AF0DD1DDBA2EE00AC6899 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 554AF0DC1DDBA2EE00AC6899 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		554AF0C11DDB80BA00AC6899 /* Day27Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day27Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		554AF0C11DDB80BA00AC6899 /* Day27Demo-MRC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day27Demo-MRC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		554AF0C51DDB80BA00AC6899 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		554AF0C71DDB80BA00AC6899 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		554AF0C81DDB80BA00AC6899 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +27,8 @@
 		554AF0D01DDB80BA00AC6899 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		554AF0D31DDB80BA00AC6899 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		554AF0D51DDB80BA00AC6899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		554AF0DB1DDBA2EE00AC6899 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = ../User.h; sourceTree = "<group>"; };
+		554AF0DC1DDBA2EE00AC6899 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = ../User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +53,7 @@
 		554AF0C21DDB80BA00AC6899 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				554AF0C11DDB80BA00AC6899 /* Day27Demo.app */,
+				554AF0C11DDB80BA00AC6899 /* Day27Demo-MRC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +61,8 @@
 		554AF0C31DDB80BA00AC6899 /* Day27Demo */ = {
 			isa = PBXGroup;
 			children = (
+				554AF0DB1DDBA2EE00AC6899 /* User.h */,
+				554AF0DC1DDBA2EE00AC6899 /* User.m */,
 				554AF0C71DDB80BA00AC6899 /* AppDelegate.h */,
 				554AF0C81DDB80BA00AC6899 /* AppDelegate.m */,
 				554AF0CA1DDB80BA00AC6899 /* ViewController.h */,
@@ -82,9 +87,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		554AF0C01DDB80BA00AC6899 /* Day27Demo */ = {
+		554AF0C01DDB80BA00AC6899 /* Day27Demo-MRC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 554AF0D81DDB80BA00AC6899 /* Build configuration list for PBXNativeTarget "Day27Demo" */;
+			buildConfigurationList = 554AF0D81DDB80BA00AC6899 /* Build configuration list for PBXNativeTarget "Day27Demo-MRC" */;
 			buildPhases = (
 				554AF0BD1DDB80BA00AC6899 /* Sources */,
 				554AF0BE1DDB80BA00AC6899 /* Frameworks */,
@@ -94,9 +99,9 @@
 			);
 			dependencies = (
 			);
-			name = Day27Demo;
+			name = "Day27Demo-MRC";
 			productName = Day27Demo;
-			productReference = 554AF0C11DDB80BA00AC6899 /* Day27Demo.app */;
+			productReference = 554AF0C11DDB80BA00AC6899 /* Day27Demo-MRC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -115,7 +120,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 554AF0BC1DDB80BA00AC6899 /* Build configuration list for PBXProject "Day27Demo" */;
+			buildConfigurationList = 554AF0BC1DDB80BA00AC6899 /* Build configuration list for PBXProject "Day27Demo-MRC" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -128,7 +133,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				554AF0C01DDB80BA00AC6899 /* Day27Demo */,
+				554AF0C01DDB80BA00AC6899 /* Day27Demo-MRC */,
 			);
 		};
 /* End PBXProject section */
@@ -151,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				554AF0DD1DDBA2EE00AC6899 /* User.m in Sources */,
 				554AF0CC1DDB80BA00AC6899 /* ViewController.m in Sources */,
 				554AF0C91DDB80BA00AC6899 /* AppDelegate.m in Sources */,
 				554AF0C61DDB80BA00AC6899 /* main.m in Sources */,
@@ -273,6 +279,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				DEVELOPMENT_TEAM = 4YFWUVNT8L;
 				INFOPLIST_FILE = Day27Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -285,6 +292,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				DEVELOPMENT_TEAM = 4YFWUVNT8L;
 				INFOPLIST_FILE = Day27Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -296,7 +304,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		554AF0BC1DDB80BA00AC6899 /* Build configuration list for PBXProject "Day27Demo" */ = {
+		554AF0BC1DDB80BA00AC6899 /* Build configuration list for PBXProject "Day27Demo-MRC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				554AF0D61DDB80BA00AC6899 /* Debug */,
@@ -305,13 +313,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		554AF0D81DDB80BA00AC6899 /* Build configuration list for PBXNativeTarget "Day27Demo" */ = {
+		554AF0D81DDB80BA00AC6899 /* Build configuration list for PBXNativeTarget "Day27Demo-MRC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				554AF0D91DDB80BA00AC6899 /* Debug */,
 				554AF0DA1DDB80BA00AC6899 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

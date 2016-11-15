@@ -109,7 +109,48 @@ int gMoveNumber = 10;
     // In order to cast the type as mutable from immutable and get autocomplete access to the methods for the immutable type (convince the compiler that the methods are available), have to actually do something to change the string that is now mutable! This will also only work one statment at a time. Eg. it is only cast as mutable for the purpose of one statment, according to what the compiler knows.
     [(NSMutableString *)stringy appendFormat:@" (but after recasting the type, the mutable string methods will autocomplete.)"];
     
+    // COLLECTIONS
     
+    NSString *string1 = @"one";
+    NSString *string2 = @"two";
+    NSString *string3 = @"three";
+
+    NSNumber *number = @55;
+    
+    // Create an array constant shorthand:
+    NSArray *array = @[string1, string2, string3, number];
+    
+    // Not shorthand: needs nil at end to know where array ends.
+    //    NSArray *array = [NSArray arrayWithObjects:string1, string2, string3, nil];
+    
+    NSLog(@"%lu", (unsigned long)array.count);
+    
+    // dictionary shorthand creation:
+    NSDictionary *dictionary = @{@"stringOne": string1, @2: string2, @"stringThree": string3};
+    
+    // get values out of a dict:
+    NSString *otherString1 = [dictionary objectForKey:@"stringOne"];
+    
+    NSString *otherString2 = dictionary[@2];
+//    
+//    // Mutable dict:
+//    NSMutableDictionary *mutableDict = [[NSMutableDictionary alloc]init];
+//    
+//    // add k/v pair to dict.
+//    [mutableDict setObject: @"This is a string." forKey: @"aString"];
+//    
+//    // remove a value from a dict with:
+//    [mutableDict setNilValueForKey:@"aString"];
+
+    // MARK: NSFileManager
+    
+    // get access to default file manager in our sandbox.
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    // gives us urls the point to the path of the documents directory for this app
+    NSArray *urls = [fileManager URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask];
+    
+    NSLog(@"%@", urls);
 }
 
 

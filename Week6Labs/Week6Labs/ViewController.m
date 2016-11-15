@@ -24,6 +24,8 @@
     NSArray *names = @[@"Carol", @"Wanda", @"Jennifer", @"Natasha", @"Jessica", @"Kumala"];
 
     [somebody printNamesInArray: names];
+    
+    [self hadABirthday];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,8 +36,6 @@
 -(void)hadABirthday{
     NSLog(@"Birthday magic happens here.");
 }
-
-
 
 
 @end

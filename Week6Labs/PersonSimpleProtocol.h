@@ -10,4 +10,10 @@
 
 @protocol PersonSimpleProtocol <NSObject>
 
+@required
+-(void)hadABirthday;
+
+@optional
+-(void)changedTheirName;
+
 @end

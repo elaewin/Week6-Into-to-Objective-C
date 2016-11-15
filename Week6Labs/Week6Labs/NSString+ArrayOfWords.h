@@ -10,4 +10,6 @@
 
 @interface NSString (ArrayOfWords)
 
+-(NSArray *)wordsInAString;
+
 @end

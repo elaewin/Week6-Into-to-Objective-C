@@ -10,4 +10,13 @@
 
 @interface Person : NSObject
 
+// accessor methods
+-(NSString *)name;
+-(NSInteger *)age;
+-(void)setName:(NSString *)name;
+-(void)setAge:(NSInteger *)age;
+-(void)printNamesInArray:(NSArray *)array;
+
+// instance methods
+
 @end

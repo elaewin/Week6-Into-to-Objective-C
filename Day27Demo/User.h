@@ -13,7 +13,15 @@
 {
     NSString *_name;
     NSString *_email;
-    
 }
+
+// Accessor Methods
+-(void)setName: (NSString *)name;
+-(void)setEmail: (NSString *)email;
+-(NSString *)name;
+-(NSString *)email;
+
+// Other methods
+-(NSString *)description;
 
 @end

@@ -48,5 +48,29 @@
     return description;
 }
 
+-(void)dealloc {
+    
+    [_name release];
+    [_email release];
+    
+    // Need to do this to redirect the pointers (so there are no dangling pointers left, which could cause a crash if referenced elsewhere) from the dealloc'd place in memory.
+    _name = nil;
+    _email = nil;
+    
+    // Checking to make sure that our retain count is at 1.
+    NSLog(@"Retain Count: %li", [self retainCount]);
+    
+    // have to put this LAST, so that our instance is not killed before we can dealloc our members.
+    [super dealloc];
+}
 
 @end
+
+
+
+
+
+
+
+
+

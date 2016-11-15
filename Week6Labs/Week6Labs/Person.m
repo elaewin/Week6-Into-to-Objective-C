@@ -10,4 +10,33 @@
 
 @implementation Person
 
+NSString *_name;
+NSInteger *_age;
+
+// getters
+-(NSString *)name{
+    return _name;
+}
+
+-(NSInteger *)age{
+    return _age;
+}
+
+// setters
+-(void)setName:(NSString *)name{
+    _name = name;
+}
+
+-(void)setAge:(NSInteger *)age{
+    _age = age;
+}
+
+//Create a function that takes in an NSArray of People and using a for-loop, prints their names to the console.
+-(void)printNamesInArray:(NSArray *)array{
+    int n;
+    for (n = 1; n < array.count; n += 1) {
+        NSLog(@"%@", [array objectAtIndex: n]);
+    }
+}
+
 @end

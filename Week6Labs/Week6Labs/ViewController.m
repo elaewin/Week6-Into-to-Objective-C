@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "PersonSimpleProtocol.h"
+#import "Person.h"
 
-@interface ViewController ()
+@interface ViewController ()<PersonSimpleProtocol>
 
 @end
 
@@ -16,14 +18,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+    
+    Person *somebody = [[Person alloc]init];
+    
+    NSArray *names = @[@"Carol", @"Wanda", @"Jennifer", @"Natasha", @"Jessica", @"Kumala"];
 
+    [somebody printNamesInArray: names];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void)hadABirthday{
+    // Birthday magic goes here.
+}
+
+
 
 
 @end

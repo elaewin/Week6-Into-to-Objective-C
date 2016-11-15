@@ -34,7 +34,7 @@ NSInteger *_age;
 //Create a function that takes in an NSArray of People and using a for-loop, prints their names to the console.
 -(void)printNamesInArray:(NSArray *)array{
     int n;
-    for (n = 1; n < array.count; n += 1) {
+    for (n = 0; n < array.count; n += 1) {
         NSLog(@"%@", [array objectAtIndex: n]);
     }
 }

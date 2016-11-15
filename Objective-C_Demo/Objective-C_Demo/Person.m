@@ -8,9 +8,12 @@
 
 #import "Person.h"
 
+@interface Person (){
+    NSString *_name;
+}@end
+
 @implementation Person
 
-    NSString *_name;
     int _age;
 
 //accessor methods

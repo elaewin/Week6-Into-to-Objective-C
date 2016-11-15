@@ -32,7 +32,7 @@
 }
 
 -(void)hadABirthday{
-    // Birthday magic goes here.
+    NSLog(@"Birthday magic happens here.");
 }
 
 

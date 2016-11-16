@@ -14,8 +14,6 @@
 // create a singleton
 +(instancetype)shared;
 
--(instancetype)init;
-
 -(NSInteger)count;
 -(NSArray *)allStudents;
 

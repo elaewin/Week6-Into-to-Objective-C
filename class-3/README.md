@@ -1,7 +1,7 @@
 #Week 6 - Class 3
 ##Homework
 * Create a new project, we will be building out this app today and tomorrow.  
-* Define a Student class with these **VARIABLES**: firstName, lastName, email, phone.  
+* Define a Student class with these **PROPERTIES**: firstName, lastName, email, phone.  
 	* Declare a custom initializer that takes in required parameters.  
 	* Conform Student class to NSCoding protocol and implement required methods.  
 * Define and build StudentStore.  

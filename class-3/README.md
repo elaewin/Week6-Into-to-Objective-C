@@ -15,7 +15,7 @@
 ###Reading Assignment:
 * Programming in Objective-C:
   * **Chapter 9:** Polymorphism, Dynamic Typing and Dynamic Binding
-	* **Chapter 12:** The Preprocessor
+  * **Chapter 12:** The Preprocessor
 
 ##Other Resources
 * [Reading Assignments](../../Resources/ra-grading-standard/)

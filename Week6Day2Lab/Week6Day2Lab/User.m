@@ -13,38 +13,20 @@
 
 #import "User.h"
 
+@interface User()<NSCopying>
+
+@end
+
 @implementation User
 
--(instancetype) init {
+-(instancetype) initWithName:(NSString *)userName withEmail:(NSString *)userEmail withAge:(NSNumber *)userAge  {
     self = [super init];
-    
     if(self) {
-        self.name = nil;
-        self.email = nil;
-        self.age = 0;
-    }
-    return self;
-}
-
--(instancetype) initWithName: (NSString *)userName {
-    if([self init]) {
         self.name = userName;
-    }
-    return [self init];
-}
-
--(instancetype) initWithEmail: (NSString *)userEmail {
-    if([self init]) {
         self.email = userEmail;
-    }
-    return [self init];
-}
-
--(instancetype) initWithAge: (NSInteger)userAge {
-    if([self init]) {
         self.age = userAge;
     }
-    return [self init];
+    return self;
 }
 
 // Setters
@@ -66,7 +48,7 @@
     }
 }
 
--(void)setAge: (NSInteger *)age {
+-(void)setAge: (NSNumber *)age {
     if (_age != age) {
         [age retain];
         [_age release];
@@ -85,7 +67,7 @@
     return _email;
 }
 
--(NSInteger *)age {
+-(NSNumber *)age {
     return _age;
 }
 
@@ -98,6 +80,15 @@
     [description autorelease];
     
     return description;
+}
+
+-(id)copyWithZone:(NSZone *)zone {
+    User *user = [[User alloc]init];
+    user.name = self.name;
+    user.email = self.email;
+    user.age = self.age;
+    
+    return user;
 }
 
 -(void)dealloc {

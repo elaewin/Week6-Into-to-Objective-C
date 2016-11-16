@@ -13,16 +13,19 @@
 {
     NSString *_name;
     NSString *_email;
-    NSInteger *_age;
+    NSNumber *_age;
 }
+
+// Init
+-(instancetype) initWithName:(NSString *)userName withEmail:(NSString *)userEmail withAge:(NSNumber *)userAge;
 
 // Accessor Methods
 -(void)setName: (NSString *)name;
 -(void)setEmail: (NSString *)email;
--(void)setAge: (NSInteger *)age;
+-(void)setAge: (NSNumber *)age;
 -(NSString *)name;
 -(NSString *)email;
--(NSInteger *)age;
+-(NSNumber *)age;
 
 // Other Methods
 -(NSString *)description;

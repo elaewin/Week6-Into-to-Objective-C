@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "User.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // In ViewController.m, inside viewDidLoad, create 5 unique instances of User and use a NSMutableDictionary to store them with their email as the key for the dictionary.
+    //  Remember to manually manage your memory for this.
+    
+    NSMutableDictionary *userDictionary = [[NSMutableDictionary alloc]init];
+    
+    User *shepherd = [[User alloc]initWithName:@"Shepherd" withEmail:@"n7@spectre.citadel.gov" withAge:@28];
+    [userDictionary setValue:shepherd forKey:shepherd.email];
+    
+    User *vakarian = [[User alloc]initWithName:@"Garrus" withEmail:@"bettershotthanyou@hierarchy.net" withAge:@42];
+    [userDictionary setValue:vakarian forKey:vakarian.email];
+
+    User *vasNormandy = [[User alloc]initWithName:@"Tali" withEmail:@"admiral.tali@normandy.alliance.gov" withAge:@25];
+    [userDictionary setValue:vasNormandy forKey:vasNormandy.email];
+    
+    User *tSoni = [[User alloc]initWithName:@"Liara" withEmail:@"archaeologist@sb.com" withAge:@95];
+    [userDictionary setValue:tSoni forKey:tSoni.email];
+    
+    User *morreau = [[User alloc]initWithName:@"Jeff" withEmail:@"joker@normandy.alliance.gov" withAge:@34];
+    [userDictionary setValue:morreau forKey:morreau.email];
+    
+    NSLog(@"Retain count for dictionary: %lu", [userDictionary retainCount]);
+    
+//    NSLog(@"Shepherd: %@", userDictionary[@"n7@spectre.citadel.gov"]);
+    
+    [userDictionary release];
 }
 
 

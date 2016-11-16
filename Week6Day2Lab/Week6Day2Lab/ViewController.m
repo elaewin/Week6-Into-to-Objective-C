@@ -23,23 +23,33 @@
     NSMutableDictionary *userDictionary = [[NSMutableDictionary alloc]init];
     
     User *shepherd = [[User alloc]initWithName:@"Shepherd" withEmail:@"n7@spectre.citadel.gov" withAge:@28];
-    [userDictionary setValue:shepherd forKey:shepherd.email];
+    [userDictionary setValue:shepherd forKey:[shepherd email]];
     
     User *vakarian = [[User alloc]initWithName:@"Garrus" withEmail:@"bettershotthanyou@hierarchy.net" withAge:@42];
-    [userDictionary setValue:vakarian forKey:vakarian.email];
+    [userDictionary setValue:vakarian forKey:[vakarian email]];
 
     User *vasNormandy = [[User alloc]initWithName:@"Tali" withEmail:@"admiral.tali@normandy.alliance.gov" withAge:@25];
-    [userDictionary setValue:vasNormandy forKey:vasNormandy.email];
+    [userDictionary setValue:vasNormandy forKey:[vasNormandy email]];
     
     User *tSoni = [[User alloc]initWithName:@"Liara" withEmail:@"archaeologist@sb.com" withAge:@95];
-    [userDictionary setValue:tSoni forKey:tSoni.email];
+    [userDictionary setValue:tSoni forKey:[tSoni email]];
     
     User *morreau = [[User alloc]initWithName:@"Jeff" withEmail:@"joker@normandy.alliance.gov" withAge:@34];
-    [userDictionary setValue:morreau forKey:morreau.email];
+    [userDictionary setValue:morreau forKey:[morreau email]];
     
+    NSLog(@"Retain count for shepherd: %lu", [shepherd retainCount]);
+    
+    [shepherd release];
+    [vakarian release];
+    [vasNormandy release];
+    [tSoni release];
+    [morreau release];
+    
+    NSLog(@"Retain count for shepherd: %lu", [shepherd retainCount]);
     NSLog(@"Retain count for dictionary: %lu", [userDictionary retainCount]);
     
 //    NSLog(@"Shepherd: %@", userDictionary[@"n7@spectre.citadel.gov"]);
+    
     
     [userDictionary release];
 }

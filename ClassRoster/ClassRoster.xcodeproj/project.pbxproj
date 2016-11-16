@@ -14,6 +14,7 @@
 		554AF11D1DDCECDD00AC6899 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 554AF11C1DDCECDD00AC6899 /* Assets.xcassets */; };
 		554AF1201DDCECDD00AC6899 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554AF11E1DDCECDD00AC6899 /* LaunchScreen.storyboard */; };
 		554AF1291DDCED0500AC6899 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 554AF1281DDCED0500AC6899 /* Student.m */; };
+		554AF12F1DDCF55300AC6899 /* StudentStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 554AF12E1DDCF55300AC6899 /* StudentStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		554AF1211DDCECDD00AC6899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		554AF1271DDCED0500AC6899 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		554AF1281DDCED0500AC6899 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		554AF12D1DDCF55300AC6899 /* StudentStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentStore.h; sourceTree = "<group>"; };
+		554AF12E1DDCF55300AC6899 /* StudentStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 				554AF1191DDCECDD00AC6899 /* Main.storyboard */,
 				554AF1271DDCED0500AC6899 /* Student.h */,
 				554AF1281DDCED0500AC6899 /* Student.m */,
+				554AF12D1DDCF55300AC6899 /* StudentStore.h */,
+				554AF12E1DDCF55300AC6899 /* StudentStore.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 			files = (
 				554AF1181DDCECDD00AC6899 /* ViewController.m in Sources */,
 				554AF1151DDCECDD00AC6899 /* AppDelegate.m in Sources */,
+				554AF12F1DDCF55300AC6899 /* StudentStore.m in Sources */,
 				554AF1121DDCECDD00AC6899 /* main.m in Sources */,
 				554AF1291DDCED0500AC6899 /* Student.m in Sources */,
 			);

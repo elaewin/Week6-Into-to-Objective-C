@@ -61,14 +61,9 @@
 		554AF10F1DDCECDD00AC6899 /* ClassRoster */ = {
 			isa = PBXGroup;
 			children = (
-				554AF1131DDCECDD00AC6899 /* AppDelegate.h */,
-				554AF1141DDCECDD00AC6899 /* AppDelegate.m */,
 				554AF12B1DDCED1900AC6899 /* Model */,
 				554AF12A1DDCED0E00AC6899 /* Controller */,
-				554AF1191DDCECDD00AC6899 /* Main.storyboard */,
-				554AF11C1DDCECDD00AC6899 /* Assets.xcassets */,
-				554AF11E1DDCECDD00AC6899 /* LaunchScreen.storyboard */,
-				554AF1211DDCECDD00AC6899 /* Info.plist */,
+				554AF12C1DDCF43A00AC6899 /* View */,
 				554AF1101DDCECDD00AC6899 /* Supporting Files */,
 			);
 			path = ClassRoster;
@@ -77,6 +72,10 @@
 		554AF1101DDCECDD00AC6899 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				554AF11C1DDCECDD00AC6899 /* Assets.xcassets */,
+				554AF1131DDCECDD00AC6899 /* AppDelegate.h */,
+				554AF1141DDCECDD00AC6899 /* AppDelegate.m */,
+				554AF1211DDCECDD00AC6899 /* Info.plist */,
 				554AF1111DDCECDD00AC6899 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -94,10 +93,19 @@
 		554AF12B1DDCED1900AC6899 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				554AF11E1DDCECDD00AC6899 /* LaunchScreen.storyboard */,
+				554AF1191DDCECDD00AC6899 /* Main.storyboard */,
 				554AF1271DDCED0500AC6899 /* Student.h */,
 				554AF1281DDCED0500AC6899 /* Student.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		554AF12C1DDCF43A00AC6899 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

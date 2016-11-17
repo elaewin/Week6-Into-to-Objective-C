@@ -11,6 +11,15 @@
 @implementation Counter
 
 -(void)incrementCounter {
+    
+//    // this if statement is for manual reporting of KVO.
+//    if (self.count % 3 == 0) {
+//        [self willChangeValueForKey:@"count"];
+//        self.count++;
+//        [self didChangeValueForKey:@"count"];
+//    } else {
+//        self.count++;
+//    }
     self.count++;
 }
 

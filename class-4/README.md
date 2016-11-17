@@ -3,8 +3,8 @@
 * Build out more of the UI:  
 	* Embed the `ViewController` into a `NavigationController`.  
 	* Create a new UIViewController called `AddStudentViewController`.  
-		* Setup AddViewController scene with text fields for each model variable(firstName, lastName, email). 
-		* Add `Save` and `Cancel` buttons.  
+		* Setup `AddStudentViewController` with text fields for each `Student` property(firstName, lastName, email). 
+		* Add `Save` and `Cancel` buttons and implement their functionality.  
 	* Add UIBarButton to the ViewController's NavigationBar & create a segue to the AddViewController.  
 		* When pressed, this button should present modally the `AddStudentViewController` to properly allow the user to create a new `Student`.  
 

@@ -6,7 +6,7 @@
 		* Setup AddViewController scene with text fields for each model variable(firstName, lastName, email). 
 		* Add `Save` and `Cancel` buttons.  
 	* Add UIBarButton to the ViewController's NavigationBar & create a segue to the AddViewController.  
-		* When pressed, this button should present modally the `AddStudentViewController` to properly create a new `Student`.  
+		* When pressed, this button should present modally the `AddStudentViewController` to properly allow the user to create a new `Student`.  
 
 ###Reading Assignment:
 * Programming in Objective-C

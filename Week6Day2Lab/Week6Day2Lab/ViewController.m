@@ -37,19 +37,11 @@
     User *morreau = [[User alloc]initWithName:@"Jeff" withEmail:@"joker@normandy.alliance.gov" withAge:@34];
     [userDictionary setValue:morreau forKey:[morreau email]];
     
-    NSLog(@"Retain count for shepherd: %lu", [shepherd retainCount]);
-    
     [shepherd release];
     [vakarian release];
     [vasNormandy release];
     [tSoni release];
     [morreau release];
-    
-    NSLog(@"Retain count for shepherd: %lu", [shepherd retainCount]);
-    NSLog(@"Retain count for dictionary: %lu", [userDictionary retainCount]);
-    
-//    NSLog(@"Shepherd: %@", userDictionary[@"n7@spectre.citadel.gov"]);
-    
     
     [userDictionary release];
 }

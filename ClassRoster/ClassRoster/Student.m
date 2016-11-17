@@ -11,7 +11,7 @@
 @implementation Student
 
 // Init
--(instancetype)initWithFirstName:(NSString *)firstName lastName:(NSString *)lastName email:(NSString *)email phone:(NSNumber *)phone {
+-(instancetype)initWithFirstName:(NSString *)firstName lastName:(NSString *)lastName email:(NSString *)email phone:(NSString *)phone {
     
     self = [super init];
     

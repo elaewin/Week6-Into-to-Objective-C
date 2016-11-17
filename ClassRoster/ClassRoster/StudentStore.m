@@ -64,20 +64,29 @@
 }
 
 -(void)add:(Student *)student {
-    [self.students setObject:student forKey:student.email];
-    [self save];
+    if ([self.students objectForKey: [student email]]) {
+        [self.students setObject:student forKey:student.email];
+        [self save];
+    } else {
+        NSLog(@"%@ %@ already in array with email %@", [student firstName], [student lastName], [student email]);
+    }
+    
 }
 
 -(void)remove:(Student *)student {
-    [self.students removeObjectForKey:student.email];
-    [self save];
+    if (![self.students objectForKey:[student email]]) {
+        [self.students removeObjectForKey:student.email];
+        [self save];
+    } else {
+        NSLog(@"%@ %@ not in array with email %@", [student firstName], [student lastName], [student email]);
+    }
 }
 
 -(void)save {
     // save array of students to the archiveURL location (.path makes it a string)
     BOOL success = [NSKeyedArchiver archiveRootObject:self.students toFile: self.archiveURL.path];
     
-//    NSLog(@"Save result: %i", success);
+    NSLog(@"Save result: %i", success);
 }
 
 

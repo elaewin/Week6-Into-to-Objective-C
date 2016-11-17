@@ -1,12 +1,12 @@
 //
 //  AppDelegate.h
-//  ClassRoster
+//  Demo-MultiSB-KVO-KVC
 //
-//  Created by Erica Winberry on 11/16/16.
+//  Created by Erica Winberry on 11/17/16.
 //  Copyright © 2016 Erica Winberry. All rights reserved.
 //
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

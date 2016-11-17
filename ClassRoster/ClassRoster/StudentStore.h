@@ -6,7 +6,7 @@
 //  Copyright © 2016 Erica Winberry. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 #import "Student.h"
 
 @interface StudentStore : NSObject

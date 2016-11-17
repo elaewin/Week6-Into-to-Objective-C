@@ -77,7 +77,7 @@
     // save array of students to the archiveURL location (.path makes it a string)
     BOOL success = [NSKeyedArchiver archiveRootObject:self.students toFile: self.archiveURL.path];
     
-    NSLog(@"Save result: %i", success);
+//    NSLog(@"Save result: %i", success);
 }
 
 

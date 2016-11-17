@@ -10,4 +10,10 @@
 
 @interface StudentTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *studentName;
+
+@property (weak, nonatomic) IBOutlet UILabel *studentEmail;
+
+@property (weak, nonatomic) IBOutlet UILabel *studentPhone;
+
 @end

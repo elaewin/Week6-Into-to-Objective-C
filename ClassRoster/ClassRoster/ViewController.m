@@ -26,16 +26,33 @@
     NSLog(@"Array of Students: %@", allStudents);
     
     //CREATE A NEW STUDENT TO SAVE
-    Student *newStudent = [[Student alloc]initWithFirstName:@"Adam" lastName:@"Wallraff" email:@"adam@someotheraddress.com" phone:@"206-555-9876"];
     
-    [[StudentStore shared] add:newStudent];
+    Student *kitty = [[Student alloc]initWithFirstName:@"Katherine" lastName:@"Pride" email:@"shadowcat@xavier.edu" phone:@"847-548-8977"];
+    
+    [[StudentStore shared] add:kitty];
+    
+    Student *sam = [[Student alloc]initWithFirstName:@"Sam" lastName:@"Guthrie" email:@"cannonball@xavier.edu" phone:@"502-226-6062"];
+    
+    [[StudentStore shared] add:sam];
+    
+    Student *danielle = [[Student alloc]initWithFirstName:@"Danielle" lastName:@"Moonstar" email:@"mirage@xavier.edu" phone:@"303-647-2430"];
+    
+    [[StudentStore shared] add:danielle];
+
+    Student *illyana = [[Student alloc]initWithFirstName:@"Illyana" lastName:@"Rasputina" email:@"magic@xavier.edu" phone:@"914-624-4263"];
+    
+    [[StudentStore shared] add:illyana];
+    
+    Student *rhane = [[Student alloc]initWithFirstName:@"Rhane" lastName:@"Sinclair" email:@"wolfsbane@xavier.edu" phone:@"914-965-3722"];
+    
+    [[StudentStore shared] add:rhane];
+    
+    Student *roberto = [[Student alloc]initWithFirstName:@"Roberto" lastName:@"da Costa" email:@"sunspot@xavier.edu" phone:@"914-786-7768"];
+    
+    [[StudentStore shared] add:roberto];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+// MARK: TableViewDataSource Protocol Methods
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [[[StudentStore shared] allStudents] count];

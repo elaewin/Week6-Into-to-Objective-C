@@ -101,7 +101,7 @@
     _age = nil;
     _email = nil;
     
-    NSLog(@"Retain Count: %li", [self retainCount]);
+    NSLog(@"Dealloc Retain Count: %li", [self retainCount]);
     
     [super dealloc];
 }

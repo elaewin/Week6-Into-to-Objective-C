@@ -11,13 +11,22 @@
 
 @interface ViewController ()
 
+@property(strong, nonatomic) Counter *counter;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.counter = [[Counter alloc]init];
+    
+    // have to do forKeyPath instead of forKey, because trying to access the 'count' value of counter, not the counter itself.
+    [self setValue:@100 forKeyPath:@"counter.count"];
+    
+    NSLog(@"counter.count value: %ld", (long)self.counter.count);
+    
 }
 
 

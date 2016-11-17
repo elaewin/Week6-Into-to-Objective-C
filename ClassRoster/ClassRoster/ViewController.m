@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "StudentStore.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSArray *allStudents = [[StudentStore shared] allStudents];
+    
+    NSLog(@"Array of Students: %@", allStudents);
+    
+    //CREATE A NEW STUDENT TO SAVE
+    Student *newStudent = [[Student alloc]initWithFirstName:@"Adam" lastName:@"Wallraff" email:@"adam@someotheraddress.com"];
+    
+    [[StudentStore shared] add:newStudent];
 }
 
 

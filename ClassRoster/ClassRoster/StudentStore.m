@@ -12,7 +12,7 @@
 @interface StudentStore()
 
 // Underlying/Backing Students Array
-@property(strong, nonatomic)NSMutableArray *students;
+@property(strong, nonatomic)NSMutableDictionary *students;
 
 @end
 
@@ -37,10 +37,11 @@
     self = [super init];
     
     if (self) {
+        // if there is nothing at this url, the result will be nil (so next if statement kicks in.)
         self.students = [NSKeyedUnarchiver unarchiveObjectWithData:[NSData dataWithContentsOfURL:self.archiveURL]];
         
         if(!self.students) {
-            self.students = [[NSMutableArray alloc]init];
+            self.students = [[NSMutableDictionary alloc]init];
         }
     }
     
@@ -52,21 +53,24 @@
 }
 
 -(NSArray *)allStudents {
-    return [self.students copy];
+    NSMutableArray *results = [[NSMutableArray alloc]init];
+    
+    for(Student *student in self.students.allValues) {
+        
+        [results addObject:[student copy]];
+    }
+    
+    return results;
 }
 
 -(void)add:(Student *)student {
-    if(![self.students containsObject:student]) {
-        [self.students addObject:student];
-        [self save];
-    }
+    [self.students setObject:student forKey:student.email];
+    [self save];
 }
 
 -(void)remove:(Student *)student {
-    if([self.students containsObject:student]) {
-        [self.students removeObject:student];
-        [self save];
-    }
+    [self.students removeObjectForKey:student.email];
+    [self save];
 }
 
 -(void)save {
@@ -85,13 +89,3 @@
 }
 
 @end
-
-
-
-
-
-
-
-
-
-

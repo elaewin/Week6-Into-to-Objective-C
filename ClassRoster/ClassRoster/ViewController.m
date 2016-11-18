@@ -30,6 +30,8 @@
     
     NSLog(@"Array of Students: %@", allStudents);
     
+    NSLog(@"# of records in students array: %lu", (unsigned long)allStudents.count);
+    
     //CREATE A NEW STUDENT TO SAVE
     
     Student *kitty = [[Student alloc]initWithFirstName:@"Katherine" lastName:@"Pride" email:@"shadowcat@xavier.edu" phone:@"847-548-8977"];
@@ -60,9 +62,7 @@
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    NSArray *allStudents = [[StudentStore shared] allStudents];
-    
-    NSLog(@"# of records in students array: %lu", (unsigned long)allStudents.count);
+    [self.tableView reloadData];
 
 }
 

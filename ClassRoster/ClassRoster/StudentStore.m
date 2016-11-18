@@ -64,14 +64,18 @@
 }
 
 -(void)add:(Student *)student {
-    if ([self.students objectForKey: [student email]]) {
-        [self.students setObject:student forKey:student.email];
-        [self save];
-    } else {
-        NSLog(@"%@ %@ already in array with email %@", [student firstName], [student lastName], [student email]);
-    }
-    
+    [self.students setObject:student forKey:student.email];
+    [self save];
 }
+
+//-(void)add:(Student *)student {
+//    if ([self.students objectForKey: [student email]]) {
+//        [self.students setObject:student forKey:student.email];
+//        [self save];
+//    } else {
+//        NSLog(@"%@ %@ already in array with email %@", [student firstName], [student lastName], [student email]);
+//    }
+//}
 
 -(void)remove:(Student *)student {
     if (![self.students objectForKey:[student email]]) {

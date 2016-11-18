@@ -9,12 +9,17 @@
 #import "ViewController.h"
 #import "StudentStore.h"
 #import "StudentTableViewCell.h"
+#import "AddStudentViewController.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
+- (IBAction)addButtonPressed:(id)sender {
+    [self performSegueWithIdentifier:@"AddNewStudentSegue" sender:nil];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,6 +29,8 @@
     NSArray *allStudents = [[StudentStore shared] allStudents];
     
     NSLog(@"Array of Students: %@", allStudents);
+    
+    NSLog(@"# of records in students array: %lu", (unsigned long)allStudents.count);
     
     //CREATE A NEW STUDENT TO SAVE
     
@@ -51,6 +58,24 @@
     
     [[StudentStore shared] add:roberto];
 }
+
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    [self.tableView reloadData];
+
+}
+
+// - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//     [super prepareForSegue:segue sender:sender];
+//     
+//     if([segue.identifier isEqualToString:@"AddNewStudentSegue"]) {
+//         AddStudentViewController *segueTargetVC = segue.destinationViewController;
+//         
+//     }
+// }
+
+
 
 // MARK: TableViewDataSource Protocol Methods
 

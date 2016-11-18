@@ -16,7 +16,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+//    UIStoryboard *firstSB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    UIStoryboard *secondSB = [UIStoryboard storyboardWithName:@"AddStudentViewController" bundle:nil];
+//    
+//    UIViewController *firstVC = [firstSB instantiateInitialViewController];
+//    UIViewController *secondVC = [secondSB instantiateInitialViewController];
+//
+//    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:firstVC];
+//    
+//    navController.viewControllers = @[firstVC, secondVC];
+    
     return YES;
 }
 

@@ -16,7 +16,38 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+//    UINavigationController *navController = [[UINavigationController alloc]init];
+//    
+//    UIStoryboard *firstSB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    UIStoryboard *secondSB = [UIStoryboard storyboardWithName:@"AddStudentViewController" bundle:nil];
+//    
+//    UIViewController *firstVC = [firstSB instantiateInitialViewController];
+//    UIViewController *secondVC = [secondSB instantiateInitialViewController];
+//    
+//    navController.viewControllers = @[firstVC, secondVC];
+//    
+    
+    
+//    UITabBarController *rootTabBarController = [[UITabBarController alloc]init];
+//    
+//    UIStoryboard *firstSB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    UIStoryboard *secondSB = [UIStoryboard storyboardWithName:@"SecondTab" bundle:nil];
+//    
+//    UIViewController *firstVC = [firstSB instantiateInitialViewController];
+//    firstVC.title = @"First View Controller";
+//    
+//    UIViewController *secondVC = [secondSB instantiateInitialViewController];
+//    secondVC.title = @"Second View Controller";
+//    
+//    rootTabBarController.viewControllers = @[firstVC, secondVC];
+//    
+//    self.window.rootViewController = rootTabBarController;
+    
+    
+    
+    
+    
     return YES;
 }
 

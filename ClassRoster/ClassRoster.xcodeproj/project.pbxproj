@@ -101,9 +101,9 @@
 		554AF12B1DDCED1900AC6899 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				554AF15B1DDE7C8300AC6899 /* AddStudent.storyboard */,
 				554AF11E1DDCECDD00AC6899 /* LaunchScreen.storyboard */,
 				554AF1191DDCECDD00AC6899 /* Main.storyboard */,
-				554AF15B1DDE7C8300AC6899 /* AddStudent.storyboard */,
 				554AF1271DDCED0500AC6899 /* Student.h */,
 				554AF1281DDCED0500AC6899 /* Student.m */,
 				554AF12D1DDCF55300AC6899 /* StudentStore.h */,

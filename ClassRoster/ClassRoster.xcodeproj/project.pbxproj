@@ -16,6 +16,7 @@
 		554AF1291DDCED0500AC6899 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 554AF1281DDCED0500AC6899 /* Student.m */; };
 		554AF12F1DDCF55300AC6899 /* StudentStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 554AF12E1DDCF55300AC6899 /* StudentStore.m */; };
 		554AF1321DDD0EBC00AC6899 /* StudentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 554AF1311DDD0EBC00AC6899 /* StudentTableViewCell.m */; };
+		554AF15C1DDE7C8300AC6899 /* AddStudent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554AF15B1DDE7C8300AC6899 /* AddStudent.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		554AF12E1DDCF55300AC6899 /* StudentStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentStore.m; sourceTree = "<group>"; };
 		554AF1301DDD0EBC00AC6899 /* StudentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentTableViewCell.h; sourceTree = "<group>"; };
 		554AF1311DDD0EBC00AC6899 /* StudentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentTableViewCell.m; sourceTree = "<group>"; };
+		554AF15B1DDE7C8300AC6899 /* AddStudent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddStudent.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				554AF11E1DDCECDD00AC6899 /* LaunchScreen.storyboard */,
 				554AF1191DDCECDD00AC6899 /* Main.storyboard */,
+				554AF15B1DDE7C8300AC6899 /* AddStudent.storyboard */,
 				554AF1271DDCED0500AC6899 /* Student.h */,
 				554AF1281DDCED0500AC6899 /* Student.m */,
 				554AF12D1DDCF55300AC6899 /* StudentStore.h */,
@@ -177,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				554AF15C1DDE7C8300AC6899 /* AddStudent.storyboard in Resources */,
 				554AF1201DDCECDD00AC6899 /* LaunchScreen.storyboard in Resources */,
 				554AF11D1DDCECDD00AC6899 /* Assets.xcassets in Resources */,
 				554AF11B1DDCECDD00AC6899 /* Main.storyboard in Resources */,
@@ -354,6 +358,7 @@
 				554AF1261DDCECDD00AC6899 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

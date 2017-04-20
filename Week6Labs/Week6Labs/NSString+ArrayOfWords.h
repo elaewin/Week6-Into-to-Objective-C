@@ -12,4 +12,6 @@
 
 -(NSArray *)wordsInAString;
 
+-(NSString *)reverseString:(NSString *)stringToReverse;
+
 @end

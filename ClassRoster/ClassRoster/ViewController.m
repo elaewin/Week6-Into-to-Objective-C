@@ -18,7 +18,13 @@
 @implementation ViewController
 
 - (IBAction)addButtonPressed:(id)sender {
-    [self performSegueWithIdentifier:@"AddNewStudentSegue" sender:nil];
+//    [self performSegueWithIdentifier:@"AddNewStudentSegue" sender:nil];
+    UIStoryboard *secondSB = [UIStoryboard storyboardWithName:@"AddStudent" bundle:nil];
+    
+    UIViewController *secondVC = [secondSB instantiateInitialViewController];
+    
+    [self presentViewController:secondVC animated:YES completion:nil];
+
 }
 
 - (void)viewDidLoad {
@@ -65,17 +71,6 @@
     [self.tableView reloadData];
 
 }
-
-// - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//     [super prepareForSegue:segue sender:sender];
-//     
-//     if([segue.identifier isEqualToString:@"AddNewStudentSegue"]) {
-//         AddStudentViewController *segueTargetVC = segue.destinationViewController;
-//         
-//     }
-// }
-
-
 
 // MARK: TableViewDataSource Protocol Methods
 
